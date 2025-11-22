@@ -11,7 +11,7 @@
         <h1>🏆 Ganhe Prêmios com a Reciclagem</h1>
         <p>Troque seus pontos por produtos e benefícios na comunidade!</p>
     </header>
-    
+
     <div class="back-to-home">
         <a href="index.html" title="Voltar para a página inicial">
             <span class="back-arrow">←</span> Início
@@ -20,6 +20,19 @@
 
     <main>
         <section class="rewards-section">
+            <div class="search-container">
+                <input type="text" id="rewardSearchInput" placeholder="Buscar prêmios...">
+                <button onclick="searchRewards()">Buscar</button>
+            </div>
+
+            <div class="filter-controls">
+                <button class="filter-btn active" onclick="filterRewards('all')" data-category="all">Todos</button>
+                <button class="filter-btn" onclick="filterRewards('pts')" data-category="pts">Por Pontos</button>
+                <button class="filter-btn" onclick="filterRewards('r$')" data-category="r$">Descontos</button>
+                <button class="filter-btn" onclick="filterRewards('curso')" data-category="curso">Educação</button>
+                <button class="filter-btn" onclick="filterRewards('muda')" data-category="muda">Plantas</button>
+            </div>
+
             <h2>Itens que você pode reciclar para ganhar pontos</h2>
             <div class="item-list">
                 <div class="reward-card">
@@ -28,84 +41,84 @@
                     <p class="item-description">Latas de refrigerante, cerveja e outras bebidas. Cada 10 latas valem 5 pontos.</p>
                     <div class="points-value">5 pts / 10 latas</div>
                 </div>
-                
+
                 <div class="reward-card">
-                    <span class="item-icon">🥤</span>
+                    <span class="item-icon">🧃</span>
                     <h3 class="item-title">Garrafas PET</h3>
                     <p class="item-description">Garrafas de água, refrigerante e outros líquidos. Cada 5 garrafas valem 3 pontos.</p>
                     <div class="points-value">3 pts / 5 garrafas</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">📰</span>
                     <h3 class="item-title">Papel e Papelão</h3>
                     <p class="item-description">Jornais, revistas, caixas de papelão limpas. Cada 1kg vale 10 pontos.</p>
                     <div class="points-value">10 pts / 1kg</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🔩</span>
                     <h3 class="item-title">Metais</h3>
                     <p class="item-description">Fios de cobre, peças metálicas, latas de tinta vazias. Valor variável por tipo e peso.</p>
                     <div class="points-value">15 pts / 500g</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🖥️</span>
                     <h3 class="item-title">Monitor</h3>
                     <p class="item-description">Monitores de computador (LCD, LED, CRT). Valor mais alto devido ao volume e presença de substâncias perigosas.</p>
                     <div class="points-value">20 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🧠</span>
                     <h3 class="item-title">Processador (CPU)</h3>
                     <p class="item-description">Processadores de computadores e servidores. Contêm metais preciosos como ouro, prata e cobre.</p>
                     <div class="points-value">15 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">💾</span>
                     <h3 class="item-title">HD/SSD</h3>
                     <p class="item-description">Discos rígidos e unidades de estado sólido. Contêm metais raros e materiais valiosos.</p>
                     <div class="points-value">12 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">💻</span>
                     <h3 class="item-title">Placa-mãe</h3>
                     <p class="item-description">Placas mães de computadores com componentes valiosos como ouro e cobre.</p>
                     <div class="points-value">9 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🔋</span>
                     <h3 class="item-title">Fonte de Alimentação</h3>
                     <p class="item-description">Fontes de computadores e dispositivos eletrônicos com metais valiosos.</p>
                     <div class="points-value">10 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">⚡</span>
                     <h3 class="item-title">Memória RAM</h3>
                     <p class="item-description">Módulos de memória RAM com componentes eletrônicos valiosos.</p>
                     <div class="points-value">8 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🖱️</span>
                     <h3 class="item-title">Teclados e Mouses</h3>
                     <p class="item-description">Teclados e mouses de computador com componentes eletrônicos e plásticos recicláveis.</p>
                     <div class="points-value">3 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🔌</span>
                     <h3 class="item-title">Cabo</h3>
                     <p class="item-description">Diversos tipos de cabos com cobre e plástico recicláveis.</p>
                     <div class="points-value">5 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">☢️</span>
                     <h3 class="item-title">Outros Materiais</h3>
@@ -124,21 +137,21 @@
                     <p class="item-description">Troque seus pontos por cupons de desconto em lojas parceiras da comunidade.</p>
                     <div class="points-value">100 pts = R$5,00</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🛒</span>
                     <h3 class="item-title">Produtos Ecológicos</h3>
                     <p class="item-description">Mochilas, garrafas reutilizáveis, produtos de limpeza biodegradáveis.</p>
                     <div class="points-value">200 pts = Garrafa Térmica</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🌱</span>
                     <h3 class="item-title">Mudas de Plantas</h3>
                     <p class="item-description">Adquira mudas de plantas nativas para ornamentar sua casa e ajudar o meio ambiente.</p>
                     <div class="points-value">50 pts = Muda de planta</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">📚</span>
                     <h3 class="item-title">Cursos e Workshops</h3>
@@ -147,7 +160,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="rewards-section">
             <h2>Kits de Produtos Disponíveis</h2>
             <div class="item-list">
@@ -157,35 +170,35 @@
                     <p class="item-description">Arroz, feijão, macarrão, farinha, fubá, aveia, biscoitos, molhos, enlatados, leite, açúcar, café, chá, sabonete, papel higiênico e outros.</p>
                     <div class="points-value">1000 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🧴</span>
                     <h3 class="item-title">Kit Higiene Masculino</h3>
                     <p class="item-description">Shampoo, condicionador, sabonete, desodorante, produtos de barbear, escova de dentes, pasta de dentes e outros itens de higiene masculina.</p>
                     <div class="points-value">800 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🧴</span>
                     <h3 class="item-title">Kit Higiene Feminino</h3>
                     <p class="item-description">Shampoo, condicionador, sabonete, hidratante, protetor solar, absorventes, produtos para cuidados faciais e corporais.</p>
                     <div class="points-value">800 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">👶</span>
                     <h3 class="item-title">Kit Higiene Bebê</h3>
                     <p class="item-description">Shampoo infantil, sabonete, fraldas, lenços umedecidos, pomada para assaduras, toalhas, banheira, escovinha e outros itens para bebês.</p>
                     <div class="points-value">1200 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🥩</span>
                     <h3 class="item-title">Kit Churrasco</h3>
                     <p class="item-description">Faca de carne, garfo trinchante, pegador, espátula, espetos, grelha e outros utensílios para churrasco.</p>
                     <div class="points-value">1500 pts</div>
                 </div>
-                
+
                 <div class="reward-card">
                     <span class="item-icon">🧉</span>
                     <h3 class="item-title">Kit Chimarrão</h3>
@@ -199,5 +212,6 @@
     <footer>
         <p>&copy; 2025 Centro Social Cesmar - Reciclando para um futuro melhor!</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

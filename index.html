@@ -13,6 +13,42 @@
     </header>
 
     <main>
+        <section class="carousel">
+            <h2>Impacto Ambiental</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="fotos/carrousel/Redução de Lixo.png" alt="Redução de Lixo">
+                    <div class="slide-content">
+                        <h3>Redução de Lixo</h3>
+                        <p>A reciclagem diminui o volume de resíduos nos aterros sanitários.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/carrousel/Economia de Recursos.png" alt="Economia de Recursos">
+                    <div class="slide-content">
+                        <h3>Economia de Recursos</h3>
+                        <p>Ao reciclar, economizamos matérias-primas e energia.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/carrousel/Proteção do Meio Ambiente.png" alt="Proteção do Meio Ambiente">
+                    <div class="slide-content">
+                        <h3>Proteção do Meio Ambiente</h3>
+                        <p>A reciclagem reduz a poluição do solo e da água.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
         <section class="intro">
             <h2>Como funciona?</h2>
             <p>Deposite seus materiais recicláveis em nossos pontos inteligentes espalhados pela comunidade e receba pontos que podem ser trocados por prêmios!</p>
@@ -62,14 +98,63 @@
 
         <section class="team">
             <h2>Equipe Envolvida</h2>
-            <p>Conheça algumas das pessoas que fazem esse projeto acontecer:</p>
+            <p>Conheça as pessoas que fazem esse projeto acontecer:</p>
             <div class="team-grid">
                 <div class="team-member">
-                    <img src="fotos/camily.png" alt="Camily Shultz">
-                    <h3>Camily Shultz</h3>
+                    <img src="fotos/equipe/camily (2).png" alt="Camily Schutz">
+                    <h3>Camily Schutz</h3>
                     <p>Gerente de Projeto</p>
                 </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/eduardo antunes.jpg" alt="Eduardo Antunes">
+                    <h3>Eduardo Antunes</h3>
+                    <p>Consultor Ambiental</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/eduardo leal.jpg" alt="Eduardo Leal">
+                    <h3>Eduardo Leal</h3>
+                    <p>Engenheiro de Processos</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/felipe.png" alt="Felipe Silva">
+                    <h3>Felipe Silva</h3>
+                    <p>Designer UX/UI</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/mariana silva.jpg" alt="Mariana Silva">
+                    <h3>Mariana Silva</h3>
+                    <p>Gerente de Comunicação</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/MIRIA DOS REIS RIBEIRO.jpg" alt="Míria Santos">
+                    <h3>Míria Santos</h3>
+                    <p>Especialista em Sustentabilidade</p>
+                </div>
             </div>
+        </section>
+
+        <section class="contact">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou sugestões? Preencha o formulário abaixo:</p>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
         </section>
 
         <section class="cta">

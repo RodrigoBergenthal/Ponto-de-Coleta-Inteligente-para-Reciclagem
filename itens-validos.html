@@ -11,7 +11,7 @@
         <h1>♻️ Itens Válidos para Reciclagem</h1>
         <p>Hardware e componentes eletrônicos aceitos em nossos pontos de coleta</p>
     </header>
-    
+
     <div class="back-to-home">
         <a href="index.html" title="Voltar para a página inicial">
             <span class="back-arrow">←</span> Início
@@ -20,6 +20,11 @@
 
     <main>
         <section class="items-description">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Buscar itens...">
+                <button onclick="searchItems()">Buscar</button>
+            </div>
+
             <h2>Hardware Eletrônico Aceito</h2>
             <div class="item-list">
                 <div class="item-card">
@@ -69,5 +74,6 @@
     <footer>
         <p>&copy; 2025 Centro Social Cesmar</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
