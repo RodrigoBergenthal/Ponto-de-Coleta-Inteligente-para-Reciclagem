@@ -2,6 +2,10 @@
 
 Este é um projeto web que visa promover a reciclagem e conscientização ambiental através de um sistema de pontos. Os usuários podem depositar materiais recicláveis em pontos de coleta inteligentes e receber pontos que podem ser trocados por prêmios.
 
+## Link do Site Hospedado
+
+acesse: https://ponto-de-coleta-inteligente-para-re.vercel.app
+
 ## Funcionalidades
 
 - Sistema de pontos por materiais recicláveis
@@ -9,6 +13,11 @@ Este é um projeto web que visa promover a reciclagem e conscientização ambien
 - Ranking de impacto ambiental
 - Informações sobre benefícios ambientais
 - Prêmios disponíveis para troca de pontos
+- Carrossel de imagens na página inicial
+- Filtros na página de prêmios
+- Formulário de contato
+- Sistema de busca
+- Seção de equipe atualizada
 
 ## Estrutura do Projeto
 
