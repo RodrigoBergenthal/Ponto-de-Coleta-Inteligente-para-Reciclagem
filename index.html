@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto de Coleta Inteligente para Reciclagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>♻️ Ponto de Coleta Inteligente</h1>
+        <p>Recicle e ganhe pontos!</p>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <h2>Impacto Ambiental</h2>
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="fotos/carrousel/Redução de Lixo.png" alt="Redução de Lixo">
+                    <div class="slide-content">
+                        <h3>Redução de Lixo</h3>
+                        <p>A reciclagem diminui o volume de resíduos nos aterros sanitários.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/carrousel/Economia de Recursos.png" alt="Economia de Recursos">
+                    <div class="slide-content">
+                        <h3>Economia de Recursos</h3>
+                        <p>Ao reciclar, economizamos matérias-primas e energia.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="fotos/carrousel/Proteção do Meio Ambiente.png" alt="Proteção do Meio Ambiente">
+                    <div class="slide-content">
+                        <h3>Proteção do Meio Ambiente</h3>
+                        <p>A reciclagem reduz a poluição do solo e da água.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <div class="carousel-indicators">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Como funciona?</h2>
+            <p>Deposite seus materiais recicláveis em nossos pontos inteligentes espalhados pela comunidade e receba pontos que podem ser trocados por prêmios!</p>
+            <ul>
+                <li><strong>1.</strong> Encontre um Ponto de Coleta Inteligente.</li>
+                <li><strong>2.</strong> Abra a tampa e deposite seu material (plástico, papel, metal, vidro).</li>
+                <li><strong>3.</strong> Veja no visor quantos pontos você ganhou.</li>
+                <li><strong>4.</strong> Acesse nosso app/site para ver seus pontos e trocá-los por prêmios!</li>
+            </ul>
+        </section>
+
+        <section class="benefits">
+            <h2>Por que participar?</h2>
+            <div class="benefit-grid">
+                <div class="benefit-card" onclick="window.open('meio-ambiente.html', '_blank')">
+                    <span class="icon">🌎</span>
+                    <h3>Protege o Meio Ambiente</h3>
+                    <p>Ajudando a reciclar, você contribui para um mundo mais limpo.</p>
+                </div>
+                <div class="benefit-card" onclick="window.open('ganhe-premios.html', '_blank')">
+                    <span class="icon">🏆</span>
+                    <h3>Ganhe Prêmios</h3>
+                    <p>Troque seus pontos por produtos e descontos na comunidade.</p>
+                </div>
+                <div class="benefit-card" onclick="window.open('ranking.html', '_blank')">
+                    <span class="icon">📊</span>
+                    <h3>Veja seu Impacto</h3>
+                    <p>Acompanhe em tempo real quanto você já reciclou.</p>
+                </div>
+                <div class="benefit-card" onclick="window.open('itens-validos.html', '_blank')">
+                    <span class="icon">💻</span>
+                    <h3>Itens Válidos</h3>
+                    <p>Clique aqui para ver a lista completa de itens eletrônicos aceitos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="locations">
+            <h2>Onde encontrar os pontos?</h2>
+            <p>Os pontos inteligentes estão localizados em lugares de fácil acesso:</p>
+            <ul>
+                <li>Centro Social Cesmar (entrada principal)</li>
+                <li>Praça Central (ao lado da igreja)</li>
+                <li>Escola Municipal (portaria)</li>
+            </ul>
+        </section>
+
+        <section class="team">
+            <h2>Equipe Envolvida</h2>
+            <p>Conheça as pessoas que fazem esse projeto acontecer:</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="fotos/equipe/camily (2).png" alt="Camily Schutz">
+                    <h3>Camily Schutz</h3>
+                    <p>Gerente de Projeto</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/eduardo antunes.jpg" alt="Eduardo Antunes">
+                    <h3>Eduardo Antunes</h3>
+                    <p>Consultor Ambiental</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/eduardo leal.jpg" alt="Eduardo Leal">
+                    <h3>Eduardo Leal</h3>
+                    <p>Engenheiro de Processos</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/felipe.png" alt="Felipe Silva">
+                    <h3>Felipe Silva</h3>
+                    <p>Designer UX/UI</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/mariana silva.jpg" alt="Mariana Silva">
+                    <h3>Mariana Silva</h3>
+                    <p>Gerente de Comunicação</p>
+                </div>
+                <div class="team-member">
+                    <img src="fotos/equipe/MIRIA DOS REIS RIBEIRO.jpg" alt="Míria Santos">
+                    <h3>Míria Santos</h3>
+                    <p>Especialista em Sustentabilidade</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou sugestões? Preencha o formulário abaixo:</p>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section class="cta">
+            <h2>Faça parte dessa mudança!</h2>
+            <p>Comece a reciclar hoje mesmo e veja a diferença que você pode fazer.</p>
+            <!-- Um botão simples para simular uma ação -->
+            <button id="learnMoreBtn">Saiba Mais</button>
+            <p><a href="coleta%20inteligente%20slides.pdf" target="_blank" class="pdf-link">Slides da Apresentação</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Centro Social Cesmar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
